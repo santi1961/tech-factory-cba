@@ -74,10 +74,14 @@ nav {grid-area: nav;
 }
 
 .datos1 {
+    list-style: none;
+    text-align: left;
     grid-area: datos1;
 }
 
 .datos2 {
+    list-style: none;
+    text-align: left;
     grid-area: datos2;
 }
 
@@ -87,7 +91,18 @@ nav {grid-area: nav;
 }
 
 /* GRIDS */
+.gridBody {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
 header {
+    grid-area: header;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -97,6 +112,7 @@ header {
 }
 
 main {
+    grid-area: main;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(4, auto);
@@ -124,6 +140,7 @@ main {
 }
 
 .gridFooter {
+    grid-area: footer;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
