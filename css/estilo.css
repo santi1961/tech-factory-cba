@@ -1,0 +1,133 @@
+/* CONFIGURACIONES GENERALES */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    margin: 5px;
+}
+
+.imgs img {
+    justify-self: center;
+}
+
+.marcas li {
+    justify-self: center;
+}
+
+.bgColor {
+    background-color: lightcoral;
+}
+
+.border {
+    border: solid 1px;
+}
+/* DECLARACION DE ITEMS PARA GRIDS */
+.minCompra {
+    grid-area: minCompra;
+    text-align: center;
+}
+.logo {grid-area: logo;}
+
+nav {grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.banner {
+    grid-area: banner;
+    text-align: center;
+}
+
+.categorias {
+    grid-area: categorias;
+    display: flex;
+    justify-content: center;
+}
+
+.marcasTitulo {
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+}
+
+.gridMarcas {
+    grid-area: gridMarcas;
+}
+
+.mapa {
+    grid-area: mapa;
+    overflow:hidden;
+    padding-bottom:30%;
+    position:relative;
+    height:0;
+}
+
+.mapa iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.datos1 {
+    grid-area: datos1;
+}
+
+.datos2 {
+    grid-area: datos2;
+}
+
+.input {
+    grid-area: input;
+    text-align: center;
+}
+
+/* GRIDS */
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "minCompra minCompra minCompra"
+    "logo nav nav";
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+    "banner banner"
+    "imgs imgs"
+    "title title"
+    "gridMarcas gridMarcas"
+    ;
+}
+
+.imgs {
+    grid-area: imgs;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, auto);
+    ;
+}
+
+.marcas {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, auto);
+    ;
+}
+
+.gridFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "mapa datos1 datos2"
+    "mapa input input";
+}
