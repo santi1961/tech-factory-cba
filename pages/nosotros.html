@@ -13,50 +13,52 @@
 	<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 	<title>Tech Factory CBA - Nosotros</title>
 </head>
-<body>
+<body class="gridBodyNosotros">
     <!-- COMIENZO DE ENCABEZADO + LOGO + NAV -->
     <header>
-        <p>Minimo de compra $10000</p>
-        <div class="headerHorizontal">
-            <div>
+        <p class="minCompra">Minimo de compra $10000</p>
+            <div class="logo">
                 <a href="../index.html"><img src="../assets/logosinfondo.png" width="100" height="100"></a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="catalogo.html">Catalogo</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="dudas.html">Dudas</a></li>
+                    <li><a href="pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="pages/catalogo.html">Catalogo</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a href="pages/dudas.html">Dudas</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
+        </header>
     <!-- FIN DE ENCABEZADO + LOGO + NAV -->
-    <main>
-        <h1>Quienes somos?</h1>
+    <main class="gridMainNosotros">
+        <h1 class="h1MainNosotros">Quienes somos?</h1>
         <hr/>
-        <p>
+        <p class="pMainNosotros">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime non aut similique culpa repellendus maiores ex nobis, doloribus voluptas labore aliquam asperiores necessitatibus harum blanditiis ducimus velit voluptates sit placeat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae nam, ullam quibusdam facere sit dignissimos recusandae! Ex voluptatum debitis tempora totam nisi, maiores, nam magnam ullam maxime nihil, cupiditate quis?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi accusamus repellat quae mollitia voluptatibus officiis asperiores quod, odit, ipsum iure quo et dolorem vero. Expedita est voluptatem harum rem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit debitis velit optio natus! Illum, quos odio explicabo, dolorum est necessitatibus natus assumenda odit quasi nisi eaque facere iure ipsa impedit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur architecto voluptate, modi dolores earum sit omnis, nemo distinctio dolor quod, aliquam quo corporis id dignissimos possimus! Deserunt hic rem Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quae doloremque molestias perferendis nihil. Iste tempore architecto perferendis accusantium, mollitia aspernatur harum dolor et alias, voluptas cum, id illo recusandae?
         </p>
-        <img src="../assets/banner.png" width="1000" height="300">
+        <img class="imgMainNosotros" src="../assets/banner.png" width="100%" height="300">
         <hr/>
     </main>
-    <footer>
+	<footer class="gridFooter">
         <!-- MAPS -->
-	<div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.522333593472!2d-63.2421217!3d-32.4051639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc42dc70036d8d%3A0x3f4c670873f541f7!2zQmx2ZC4gRXNwYcOxYSAzNDAsIFZpbGxhIE1hcsOtYSwgQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1659304563512!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	</div>
-	<!-- DATOS DE LA EMPRESA + INPUT DE OFERTAS -->
-	<ul>
-		<li>Direccion 123, villa maria, CBA, Arg</li>
-		<li>+3534222222</li>
-		<li>Hotmail@hotmail.com</li>
-		<li>Instagram</li>
-		<li>Facebook</li>
-	</ul>
-	<label for="ofertas">Recibi Ofertas</label>
-	<input type="text" name="ofertas">
-	<input type="submit" value="enviar">
-    </footer>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.522333593472!2d-63.2421217!3d-32.4051639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc42dc70036d8d%3A0x3f4c670873f541f7!2zQmx2ZC4gRXNwYcOxYSAzNDAsIFZpbGxhIE1hcsOtYSwgQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1659304563512!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- DATOS DE LA EMPRESA + INPUT DE OFERTAS -->
+        <ul class="datos1">
+            <li>Direccion 123, villa maria, CBA, Arg</li>
+            <li>+3534222222</li>
+        </ul>
+        <ul class="datos2">
+            <li>Hotmail@hotmail.com</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+        </ul>
+        <div class="input">
+            <label for="ofertas">Recibi Ofertas</label>
+            <input type="text" name="ofertas">
+            <input type="submit" value="enviar">
+        </div>
+        </footer>
 </body>
 </html>

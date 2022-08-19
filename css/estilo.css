@@ -90,8 +90,21 @@ nav {grid-area: nav;
     text-align: center;
 }
 
-/* GRIDS */
-.gridBody {
+/* ITEMS GRIDS NOSOTROS */
+.gridMainNosotros {
+    grid-area: gridMainNosotros;
+}
+
+.pMainNosotros {
+    grid-area: pMainNosotros;
+}
+
+.imgMainNosotros {
+    grid-area: imgMainNosotros;
+}
+
+/* GRIDS INDEX*/
+.gridBodyIndex {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
@@ -147,4 +160,25 @@ main {
     grid-template-areas:
     "mapa datos1 datos2"
     "mapa input input";
+}
+
+/* GRIDS NOSOTROS */
+.gridBodyNosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "header"
+    "gridMainNosotros"
+    "footer";
+}
+
+.gridMainNosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "h1MainNosotros"
+    "pMainNosotros"
+    "imgMainNosotros" ;
 }
