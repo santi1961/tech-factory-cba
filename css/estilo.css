@@ -4,25 +4,11 @@ nav ul {
     list-style: none;
 }
 
-ul li {
-    margin: 5px;
-}
-
-.imgs img {
-    justify-self: center;
-}
-
-.marcas li {
-    justify-self: center;
-}
-
-.bgColor {
-    background-color: lightcoral;
-}
-
-.border {
-    border: solid 1px;
-}
+ul li {margin: 5px;}
+.imgs img {justify-self: center;}
+.marcas li {justify-self: center;}
+.bgColor {background-color: lightcoral;}
+.border {border: solid 1px;}
 
 form {
     display: flex;
@@ -30,9 +16,7 @@ form {
     margin-top: 25px;
 }
 
-.inputText {
-    height: 160px;
-}
+.inputText {height: 160px;}
 
 /* DECLARACION DE ITEMS PARA GRIDS */
 .minCompra {
@@ -64,9 +48,7 @@ nav {grid-area: nav;
     justify-content: center;
 }
 
-.gridMarcas {
-    grid-area: gridMarcas;
-}
+.gridMarcas {grid-area: gridMarcas;}
 
 .mapa {
     grid-area: mapa;
@@ -102,17 +84,9 @@ nav {grid-area: nav;
 }
 
 /* ITEMS GRIDS NOSOTROS */
-.gridMainNosotros {
-    grid-area: gridMainNosotros;
-}
-
-.pMainNosotros {
-    grid-area: pMainNosotros;
-}
-
-.imgMainNosotros {
-    grid-area: imgMainNosotros;
-}
+.gridMainNosotros {grid-area: gridMainNosotros;}
+.pMainNosotros {grid-area: pMainNosotros;}
+.imgMainNosotros {grid-area: imgMainNosotros;}
 
 /* "ITEMS GRIDS CATALOGO */
 .gridMainCatalogo {grid-area: gridMainCatalogo;}
@@ -132,17 +106,9 @@ nav {grid-area: nav;
     "infoContacto formulario";
 }
 
-.contacto {
-    grid-area: contacto;
-}
-
-.infoContacto {
-    grid-area: infoContacto;
-}
-
-.foromulario {
-    grid-area: formulario;
-}
+.contacto {grid-area: contacto;}
+.infoContacto {grid-area: infoContacto;}
+.foromulario {grid-area: formulario;}
 
 /* ITEMS GRIDS DUDAS */
 .gridMainDudas h1 {grid-area: dudas;}
