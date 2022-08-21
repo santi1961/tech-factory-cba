@@ -13,12 +13,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 	<title>Tech Factory CBA - Catalogo</title>
 </head>
-<body>
+<body class="gridBodyCatalogo">
     <!-- COMIENZO DE ENCABEZADO + LOGO + NAV -->
     <header>
-        <p>Minimo de compra $10000</p>
-        <div class="headerHorizontal">
-            <div>
+        <p class="minCompra">Minimo de compra $10000</p>
+            <div class="logo">
                 <a href="../index.html"><img src="../assets/logosinfondo.png" width="100" height="100"></a>
             </div>
             <nav>
@@ -29,10 +28,9 @@
                     <li><a href="dudas.html">Dudas</a></li>
                 </ul>
             </nav>
-        </div>
-    </header>
+        </header>
     <!-- FIN DE ENCABEZADO + LOGO + NAV --> 
-    <main>
+    <main class="gridMainCatalogo">
         <h1>Catalogo</h1>
         <hr/>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quisquam cumque autem! Tempora labore illo maiores dolor similique magnam eius quas quis officia corrupti deleniti asperiores, velit alias, ipsam Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur velit quos facilis possimus voluptates accusantium. Est enim, sint dolor doloribus aut debitis excepturi, voluptas sapiente nisi quod at! Velit, placeat Lorem ipsum dolor sit amet consectetur adipisicing elit. At amet tempore eum tempora magnam soluta minus dolores ullam, in facere hic. Illum libero suscipit delectus blanditiis natus, quidem sapiente quibusdam.</p>
@@ -41,22 +39,26 @@
         <a href="aqui va el link del catalogo"><img src="../assets/archivo.png" width="100" height="100"></a>
     </main> 
     <hr>
-    <footer>
+	<footer class="gridFooter">
         <!-- MAPS -->
-	<div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.522333593472!2d-63.2421217!3d-32.4051639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc42dc70036d8d%3A0x3f4c670873f541f7!2zQmx2ZC4gRXNwYcOxYSAzNDAsIFZpbGxhIE1hcsOtYSwgQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1659304563512!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	</div>
-	<!-- DATOS DE LA EMPRESA + INPUT DE OFERTAS -->
-	<ul>
-		<li>Direccion 123, villa maria, CBA, Arg</li>
-		<li>+3534222222</li>
-		<li>Hotmail@hotmail.com</li>
-		<li>Instagram</li>
-		<li>Facebook</li>
-	</ul>
-    <label for="ofertas">Recibi Ofertas</label>
-	<input type="text" name="ofertas">
-	<input type="submit" value="enviar">
-    </footer> 
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.522333593472!2d-63.2421217!3d-32.4051639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cc42dc70036d8d%3A0x3f4c670873f541f7!2zQmx2ZC4gRXNwYcOxYSAzNDAsIFZpbGxhIE1hcsOtYSwgQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1659304563512!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <!-- DATOS DE LA EMPRESA + INPUT DE OFERTAS -->
+        <ul class="datos1">
+            <li>Direccion 123, villa maria, CBA, Arg</li>
+            <li>+3534222222</li>
+        </ul>
+        <ul class="datos2">
+            <li>Hotmail@hotmail.com</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+        </ul>
+        <div class="input">
+            <label for="ofertas">Recibi Ofertas</label>
+            <input type="text" name="ofertas">
+            <input type="submit" value="enviar">
+        </div>
+        </footer>
 </body>
 </html>
