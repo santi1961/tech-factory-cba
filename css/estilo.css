@@ -68,14 +68,16 @@ nav {grid-area: nav;
 
 .datos1 {
     list-style: none;
-    text-align: left;
+    text-align: center;
     grid-area: datos1;
+    padding-inline-start: 0px;
 }
 
 .datos2 {
     list-style: none;
-    text-align: left;
+    text-align: center;
     grid-area: datos2;
+    padding-inline-start: 0px;
 }
 
 .input {
@@ -168,6 +170,7 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(2, auto);
+    padding-inline-start: 0px
     ;
 }
 
@@ -249,3 +252,74 @@ main {
     "pedidos pedidos"
     "pPedidos imgPedidos";
 }
+
+/* MEDIA QUERIES MOBILE */
+@media screen and (max-width: 768px) {    
+    /* MEDIA QUERIES INDEX */
+    .gridBodyIndex {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "mobileHeader"
+    "mobileMain"
+    "mobileFooter";
+    }
+
+    header {
+    grid-area: mobileHeader;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "minCompra minCompra"
+    "logo nav";
+    }
+
+    main {grid-area: mobileMain;}
+
+    .gridFooter {
+        grid-area: mobileFooter;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "mapa"
+        "datos1"
+        "datos2"
+        "input";
+    }
+
+    .datos1 {
+        list-style: none;
+        text-align: center;
+        grid-area: datos1;
+        padding-inline-start: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+    
+    .datos2 {
+        list-style: none;
+        text-align: center;
+        grid-area: datos2;
+        padding-inline-start: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+
+    /* MEDIA QUERIES NOSOTROS */
+    .gridBodyNosotros {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "mobileHeader"
+        "mobileMainNosotros"
+        "mobileFooter";
+    }
+    
+    .gridMainNosotros {grid-area: mobileMainNosotros}
+
+
+}   
