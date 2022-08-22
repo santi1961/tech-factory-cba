@@ -14,6 +14,7 @@ form {
     display: flex;
     flex-direction: column;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .inputText {height: 160px;}
@@ -321,5 +322,59 @@ main {
     
     .gridMainNosotros {grid-area: mobileMainNosotros}
 
+    /* MEDIA QUERIES CATALOGO */
+    .gridBodyCatalogo {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "mobileHeader"
+        "mobileMainCatalogo"
+        "mobileFooter";
+    }
 
+    .gridMainCatalogo {grid-area: mobileMainCatalogo;}
+
+    /* MEDIA QUERIES CONTACTO */
+    .gridBodyContacto {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "mobileHeader"
+        "mobileMainContacto"
+        "mobileFooter";
+    }
+
+    .gridMainContacto {
+        grid-area: mobileMainContacto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "contacto"
+        "infoContacto"
+        "formulario";
+    }
+    
+    /* MEDIA QUERIES DUDAS */
+    .gridMainDudas {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows:repeat(10, auto);
+        grid-template-areas:
+        "dudas"
+        "envios"
+        "pEnvios"
+        "imgEnvios"
+        "pagos"
+        "pPagos"
+        "imgPagos"
+        "pedidos"
+        "pPedidos"
+        "imgPedidos";
+    }
+
+    .imgEnvios,.imgPagos,.imgPedidos {display: flex; justify-self: center;}
 }   
