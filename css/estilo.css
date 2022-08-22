@@ -19,6 +19,11 @@ form {
 
 .inputText {height: 160px;}
 
+/* ESTILO GENERAL INDEX */
+.minCompra {background-color: #404744; margin-block-start: 0px; margin-block-end: 0px;}
+header {background-color: #7F7F7F;}
+footer {background-color: #7F7F7F;}
+
 /* DECLARACION DE ITEMS PARA GRIDS */
 .minCompra {
     grid-area: minCompra;
