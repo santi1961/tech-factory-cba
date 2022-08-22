@@ -114,6 +114,7 @@ nav {grid-area: nav;
 .foromulario {grid-area: formulario;}
 
 /* ITEMS GRIDS DUDAS */
+.imgEnvios,.imgPagos,.imgPedidos {display: flex; justify-self: center;}
 .gridMainDudas h1 {grid-area: dudas;}
 .dudasEnvios {grid-area: envios;}
 .pEnvios {grid-area: pEnvios;}
@@ -375,6 +376,4 @@ main {
         "pPedidos"
         "imgPedidos";
     }
-
-    .imgEnvios,.imgPagos,.imgPedidos {display: flex; justify-self: center;}
 }   
