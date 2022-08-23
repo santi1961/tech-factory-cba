@@ -34,6 +34,7 @@ main {background-color: #CCCCCC;}
 .minCompra {
     grid-area: minCompra;
     text-align: center;
+    color: white;
 }
 .logo {grid-area: logo;}
 
@@ -42,6 +43,8 @@ nav {grid-area: nav;
     align-items: center;
     justify-content: end;
 }
+
+.banner img {margin-block-start: 25px;}
 
 .banner {
     grid-area: banner;
@@ -411,4 +414,6 @@ main {
         text-align: center;
         margin-block-end: 10px;
     }
+
+    .banner img {width: 100%; height: 300px;}
 }   
