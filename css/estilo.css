@@ -1,4 +1,8 @@
 /* CONFIGURACIONES GENERALES */
+.logo img {border: solid black; margin: 5px;}
+header div a {display: flex;}
+body {font-family: 'Bebas Neue', cursive; margin: 0px;}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -9,7 +13,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-ul li {margin: 5px;}
+ul li {margin: 10px;}
 .imgs img {justify-self: center;}
 .marcas li {justify-self: center;}
 .bgColor {background-color: lightcoral;}
@@ -25,9 +29,9 @@ form {
 .inputText {height: 160px;}
 
 /* ESTILO GENERAL INDEX */
-.minCompra {background-color: #404744; margin-block-start: 0px; margin-block-end: 0px;}
+.minCompra {background-color: #404744; margin-block-start: 0px; margin-block-end: 0px; border-bottom: solid black;}
 header {background-color: #7F7F7F;}
-footer {background-color: #7F7F7F;}
+footer {background-color: #7F7F7F; border: solid;}
 main {background-color: #CCCCCC;}
 
 /* DECLARACION DE ITEMS PARA GRIDS */
@@ -44,17 +48,19 @@ nav {grid-area: nav;
     justify-content: end;
 }
 
-.banner img {margin-block-start: 25px;}
-
 .banner {
     grid-area: banner;
     text-align: center;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .categorias {
     grid-area: categorias;
     display: flex;
     justify-content: center;
+    margin-block-start: 0px;
 }
 
 .marcasTitulo {
@@ -73,7 +79,8 @@ nav {grid-area: nav;
     height: 150px;
     display: flex;
     justify-self: center;
-    align-self: center
+    align-self: center;
+    border: solid;
 }
 
 .mapa iframe{
@@ -155,6 +162,7 @@ nav {grid-area: nav;
 }
 
 header {
+    border: solid;
     grid-area: header;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -171,6 +179,7 @@ main {
     grid-template-rows: repeat(4, auto);
     grid-template-areas: 
     "banner banner"
+    "categorias categorias"
     "imgs imgs"
     "title title"
     "gridMarcas gridMarcas"
