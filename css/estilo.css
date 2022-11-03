@@ -147,7 +147,7 @@ nav {grid-area: nav;
 
 .contacto {grid-area: contacto;}
 .infoContacto {grid-area: infoContacto;}
-.foromulario {grid-area: formulario;}
+.formulario {grid-area: formulario;}
 
 /* ITEMS GRIDS DUDAS */
 .imgEnvios,.imgPagos,.imgPedidos {display: flex; justify-self: center;}
